@@ -2,9 +2,9 @@ import random
 import webbrowser
 import os
 import pyautogui
-
-quartsec = int(3) / int(random.randint(1, 10))
-
+def waitfortype():
+    quartsec = int(3) / int(random.randint(1, 10))
+    return quartsec
 os.system("title TBFG - Enderman-brewer")
 print("\033[1;32;40m You found me! Please support my other games. :D") # Easter egg, by chance, added just before easter.
 # Defines important scripts
@@ -18,7 +18,12 @@ def BotPickMove():
   global p2health
   """ This function takes in two health values (P1HealthAI and P2HealthAI) 
       and outputs a decision ("Attack" or "Defense") based on a simple AI.
-
+  """
+  disort = int(random.randint(1, 5))
+  P1healthAI = p1health * disort
+  disort = int(random.randint(1, 5))
+  P2healthAI = p2health * disort
+  """  
       Args:
           P1HealthAI: The health of player 1.
           P2HealthAI: The health of player 2.
@@ -28,7 +33,7 @@ def BotPickMove():
   """
   # Chooses attack if player 1 is healthier than player 2 
   # and defense otherwise 
-  if p1health > p2health:
+  if p1healthAI > p2healthAI:
     return "Attack"
   else:
     return "Shield"
@@ -81,6 +86,7 @@ elif AIinput == "VS friend":
 else:
     print("$ Invalid, press enter to exit, then try again.")
     input("$$ ")
+    exit()
 print("$ How much health do you want players to have? I reccomend 1000-2000")
 health = int(input("$$ ")) # Defines health
 p1health = health
@@ -139,7 +145,7 @@ while win == False:
             p1shield = True
             turn = 2
         elif p1choice == "List":
-            listmoves
+            listmoves()
         elif p1choice == "NO":
             rkrl()
             print("Player 2 wins.")
@@ -157,7 +163,7 @@ while win == False:
         print("$")
         if vsAI == 1:
             p2choice = BotPickMove()
-            pyautogui.sleep(quartsec)
+            pyautogui.sleep(waitfortype)
             print(f"$$ {p2choice}")
         elif vsAI == 0:
             p2choice = input("$$ ")
@@ -175,7 +181,7 @@ while win == False:
             p2shield = True
             turn = 1
         elif p2choice == "List":
-            listmoves
+            listmoves()
         elif p2choice == "NO":
             rkrl()
             print("Player 2 wins.")
