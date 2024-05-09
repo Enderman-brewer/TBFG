@@ -1,6 +1,8 @@
 # TBFG
 A text based fighting game.
 
+If the game does not boot, try running ``installer.bat``
+
 Hi, I'm Stoflen, I am here to tell you about Enderman-brewer's game and why you should get it. Some things are still in beta and are unfinished. First we have:
 
 ## Playable charcters
