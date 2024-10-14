@@ -1,5 +1,15 @@
+> <picture>
+>   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/light-theme/warning.svg">
+>   <img alt="Warning" src="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/dark-theme/warning.svg">
+> </picture><be>
+>
+> This game has been discontinued, of this game ever breaks, please use Python 3.11 or any related version.
+
+
 # TBFG
 A text based fighting game.
+
+
 
 If the game does not boot, try running ``installer.bat``
 
