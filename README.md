@@ -3,7 +3,7 @@
 >   <img alt="Warning" src="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/dark-theme/warning.svg">
 > </picture><be>
 >
-> This game has been discontinued, of this game ever breaks, please use Python 3.11 or any related version.
+> This game has been discontinued. If it ever breaks, please use Python 3.11 or a related version.
 
 
 # TBFG
